@@ -6,7 +6,7 @@ metadata:
     type: local
     app: postgres
 spec:
-  storageClassName: manual
+  storageClassName: "csi-ko1-ssd"
   capacity:
     storage: 10Gi
   accessModes:
@@ -21,7 +21,7 @@ metadata:
   labels:
     app: postgres
 spec:
-  storageClassName: manual
+  storageClassName: "csi-ko1-ssd"
   accessModes:
     - ReadWriteMany
   resources:
